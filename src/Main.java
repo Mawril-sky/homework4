@@ -21,7 +21,7 @@ public class Main {
 // Задача 3
 
         int speed = 60;
-        if (speed > 60) {
+        if (speed >= 60) {
             System.out.println("Если скорость " + speed + " , то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + speed + " , то можно ездить спокойно");
@@ -31,13 +31,13 @@ public class Main {
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в детский сад");
         }
-        if (age >= 7 && age <= 17) {
+        else if (age >= 7 && age <= 17) {
             System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в школу");
         }
-        if (age >= 18 && age <= 24) {
+        else if (age >= 18 && age <= 24) {
             System.out.println("Если возраст человека равен " + age + " то его место в университете");
         }
-        if (age > 24) {
+        else if (age > 24) {
             System.out.println("Если возраст человека равен " + age + " то ему пора на работу");
         }
 
